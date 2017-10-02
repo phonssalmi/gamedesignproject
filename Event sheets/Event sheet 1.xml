@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="756882069914449">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="171358151862184" type="test_dude_1" />
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="246901993322900" type="test_dude_1">
+                    <param id="0" name="Distance">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="435789743010702">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="423299301327430" type="Sprite">
+                    <param id="0" name="Object">test_dude_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="206187020946504" type="test_dude_1">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="102577695209726">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="685847210351941" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-14" name="Toggle boolean" sid="303342246732165" type="Sprite3">
+                    <param id="0" name="Instance variable">selected</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="651690144710741">
+            <conditions>
+                <condition id="0" name="On click" sid="878494050122448" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="746046677646334" type="Sprite3">
+                    <param id="0" name="Instance variable">selected</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="763782693095334" type="System">
+                    <param id="0" name="First value">Mouse.Y</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">400</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="740398445234427" type="System">
+                    <param id="0" name="Object to create">Sprite4</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">Mouse.X</param>
+                    <param id="3" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="104797622390647" type="Sprite3">
+                    <param id="0" name="Instance variable">selected</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="151930647274333">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="568816906880281" type="Sprite3">
+                    <param id="0" name="Instance variable">selected</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="266402241970319" type="Sprite5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="373538078948232">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="763122033944840" type="Sprite3">
+                    <param id="0" name="Instance variable">selected</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="895272401069786" type="Sprite5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307299771135255">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="123675482734049" type="Sprite5" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="881898126968251" type="Sprite5">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154728227864925">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="562042617193712" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">test_dude_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="467232337779027" type="test_dude_1" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
